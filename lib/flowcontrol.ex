@@ -36,7 +36,7 @@ defmodule BobFlowControl do
   end
   
   defp is_blank?(phrase) do
-  	String.split(input, [" ", "\n", "\t", "\r"]) \
+  	String.split(phrase, [" ", "\n", "\t", "\r"]) \
     |> Enum.reduce(true, fn (x, acc) ->
       case x do
         "" -> true
