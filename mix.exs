@@ -3,7 +3,7 @@ defmodule RomanNumberConverter.MixProject do
     
     def project do
         [
-          app: :elixir_roman_number,
+          app: :elixir_bob_controlflow,
           version: "0.1.0",
           start_permanent: Mix.env() == :prod
         ]
