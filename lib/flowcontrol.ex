@@ -28,6 +28,13 @@ defmodule BobFlowControl do
     end
   end
   
+  defp space?(char) do
+    case char do
+      x when x in ' ' -> true
+      _ -> false
+    end
+  end
+  
   defp is_blank?(phrase) do
     String.strip(phrase) == ""
   end
