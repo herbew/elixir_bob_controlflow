@@ -6,7 +6,7 @@ defmodule BobFlowControl do
   def hey(phrase) do
   	phrase = trims(phrase) \
             |> String.reverse() \
-            |> trim_space() \
+            |> trims() \
             |> String.reverse()
     cond do
       is_blank?(phrase)    -> "Fine. Be that way!"
