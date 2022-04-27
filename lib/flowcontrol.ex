@@ -36,7 +36,14 @@ defmodule BobFlowControl do
   end
   
   defp is_blank?(phrase) do
-    String.strip(phrase) == ""
+  	String.split(input, [" ", "\n", "\t", "\r"]) \
+    |> Enum.reduce(true, fn (x, acc) ->
+      case x do
+        "" -> true
+        _ -> false
+      end
+      and acc
+    end)
   end
   
   defp is_question?(phrase) do
