@@ -1,4 +1,4 @@
-defmodule RomanNumberConverter.MixProject do
+defmodule BobFlowControl.MixProject do
     use Mix.Project
     
     def project do
